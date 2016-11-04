@@ -8,9 +8,19 @@
 
     <TextView android:text="Heart Rate" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="133dp"
+        android:layout_marginTop="125dp"
         android:id="@+id/instantHearRate"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="68"
+        android:id="@+id/current"
+        android:layout_marginTop="86dp"
+        android:layout_below="@+id/instantHearRate"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

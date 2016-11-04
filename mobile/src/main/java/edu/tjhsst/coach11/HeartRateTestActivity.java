@@ -9,13 +9,20 @@ import android.widget.TextView;
 
 public class HeartRateTestActivity extends ActionBarActivity {
     private TextView heartrate;
+    private TextView current;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_heart_rate_test);
         heartrate = (TextView) findViewById(R.id.instantHearRate); //sets heartrate = to the label; will be used to update
+        current = (TextView) findViewById(R.id.current);
+        changeNumber(""+55);
     }
-
+    public void changeNumber(String b)
+    {
+        current.setText(b);
+        return;
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
