@@ -20,6 +20,10 @@
             android:name=".HeartRateTestActivity"
             android:label="@string/title_activity_heart_rate_test" >
         </activity>
+        <meta-data
+            android:name="com.samsung.android.health.permission.read"
+            android:value="com.samsung.health.hear_rate;com.samsung.step_count;com.samsung.electrocardiogram" />
+
     </application>
 
 </manifest>
