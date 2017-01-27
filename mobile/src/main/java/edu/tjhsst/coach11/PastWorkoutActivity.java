@@ -1,31 +1,23 @@
 package edu.tjhsst.coach11;
 
-import android.content.Intent;
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-public class Login_Activity extends ActionBarActivity {
+
+public class PastWorkoutActivity extends Activity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_);
-        Button button1 = (Button) findViewById(R.id.button1);
-        button1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), HomeActivity.class); //HeartRateTestActivity.class); // go to the HeartRateTestActivity
-                startActivity(i);
-            }
-        });
-
+        setContentView(R.layout.activity_past_workout);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login_, menu);
+        getMenuInflater().inflate(R.menu.menu_past_workout, menu);
         return true;
     }
 
